@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   resources "wines"
+  post "wines/seed", to: "wines#seed"
+  post "wines/:id/rate", to: "wines#rate"
 end
